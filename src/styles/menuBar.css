@@ -1,0 +1,25 @@
+div .menu-bar{
+    
+    background: rgb(157, 191, 241);
+    color: black;
+    font-family: sans-serif;
+    size: 10px;
+    width: 1920px;
+}
+
+/*Lista Categorias*/
+div.menu-bar ul{
+    list-style: none;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+/*Lista de subcategorias*/
+div.menu-bar ul.list-menu-bar li{
+    width: 100px;
+    font-size: 14px;
+}
