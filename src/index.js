@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch } from "react-router-dom";
+
+//css
+import './assets/styles/settings/color.css'
+import './assets/styles/reset.css'
+
+//pages
+import home from './views/home.js'
+
+var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Route history={hist}>
+    <Switch>
+      <Route path="/" component={home} />
+    </Switch>
+  </Route>,
   document.getElementById('root')
 );
 
