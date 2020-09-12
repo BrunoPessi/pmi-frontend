@@ -11,7 +11,7 @@ function Products(props) {
 
     return (
         <>
-            <ProductsList />
+            <ProductsList category="2"/>
             
         </>
     )

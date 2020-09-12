@@ -18,12 +18,11 @@ const ListProduct = styled.ul`
 
 function ProductList(props) {
 
-    var isServeName = 2
 
     const [products, setProducts] = useState([])
 
     async function loadProducts() {
-        const response = await api.get('categories/' + isServeName,)
+        const response = await api.get('categories/' + props.category,)
 
         var list = response.data;
         console.log('92', list);
