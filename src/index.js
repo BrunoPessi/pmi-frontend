@@ -9,13 +9,15 @@ import "./assets/styles/reset.css"
 
 //pages
 import home from './views/home.js'
+import Products from './views/products.js'
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={home} />
+    <Route path="/products" component={Products} />
+    <Route path="/" component={home} />
     </Switch>
   </Router>,
   document.getElementById('root')
