@@ -1,17 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react'   
 
 
 //styleds
-import {Base, NameProduct,BodyProduct} from './styled.js'
+import {Base, NameProduct,BodyProduct, ImgBox, Image} from './styled.js'
 
-function Product(prosp){
+function Product(props){
     return(
         <Base>
-            <NameProduct>Blusa</NameProduct>
-            <BodyProduct>
-                <NameProduct> Blusa 2</NameProduct>
-            </BodyProduct>
+        <ImgBox>
+            <Image src={props.imgUrl}/>
+        </ImgBox>
+        <BodyProduct>
+        <NameProduct>{props.name}</NameProduct>
+        </BodyProduct>
         </Base>
     );
 }
