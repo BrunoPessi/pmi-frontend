@@ -13,10 +13,10 @@ import home from './views/home.js'
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Route history={hist}>
+  <Router history={hist}>
     <Switch>
       <Route path="/" component={home} />
     </Switch>
-  </Route>,
+  </Router>,
   document.getElementById('root')
 );
