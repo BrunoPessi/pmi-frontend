@@ -26,4 +26,5 @@ export const Base = styled.nav`
   overflow: auto;
   box-shadow: 0 0 30px #f3f1f1;
   background-color: white;
+  display: fixed;
 `
