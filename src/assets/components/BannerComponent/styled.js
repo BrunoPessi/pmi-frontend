@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 
-export const H3 = styled.h3`
-    font-size: 15rem;
+export const Img = styled.img`
+    height: 100%;
+    object-fit: cover;  
 `
 
 export const Base = styled.div`
-    font-size: 15rem;
+    height: 100%;
+    max-height: 700px;
+    justify-content: center;
+    max-width: 100%;
 `

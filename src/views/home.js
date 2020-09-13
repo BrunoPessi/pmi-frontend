@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 //components
 import Menu from '../assets/components/MenuComponent/index.js'
-import Slider from '../assets/components/BannerComponent/index.js'
+import Banner from '../assets/components/BannerComponent/index.js'
 
 const Main = styled.main`
     margin: auto;
     background: var(--color-base);
+    height: 100vh;
     `
 
 const Container = styled.div`
@@ -24,7 +25,7 @@ function App() {
         <Menu />
       </Container>
       <Container>
-        <Slider />
+        <Banner />
       </Container>
     </Main>
   );

@@ -6,7 +6,7 @@ import { Router, Route, Switch } from "react-router-dom";
 //css
 import "./assets/styles/settings/colors.css"
 import "./assets/styles/reset.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 //pages
 import home from './views/home.js'
