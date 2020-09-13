@@ -6,11 +6,8 @@ import styled from 'styled-components'
 import Menu from '../assets/components/MenuComponent/index.js'
 import Slider from '../assets/components/BannerComponent/index.js'
 import ProductHome from '../assets/components/ListsComponents/ProductCarrosel.js'
+import ProductList from '../assets/components/ListsComponents/ProductsList.js'
 
-const Main = styled.main`
-    margin: auto;
-    background: var(--color-base);
-    `
 
 const Container = styled.div`
     width: 1600px; 
@@ -20,7 +17,7 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Main>
+    <>
       <Container>
         <Menu />
       </Container>
@@ -31,8 +28,11 @@ function App() {
       <ProductHome category="1"/>
       <ProductHome category="2"/>
       <ProductHome category="3"/>
+      <Container>
+      <ProductList/>
       </Container>
-    </Main>
+      </Container>
+    </>
   );
 }
 
