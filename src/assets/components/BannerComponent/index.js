@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Base, Img, Texto } from './styled.js'
+import { Base, Img, H2 } from './styled.js'
 
 
 function Banner() {
@@ -15,6 +15,7 @@ function Banner() {
 
     return (
         <Base>
+            <H2>Teste</H2>
             <Img src="https://cms-cdn.goat.com/1600/8d3ffb578618-565a-ae11-083f-038380f7.jpg"></Img>
         </Base>
     )

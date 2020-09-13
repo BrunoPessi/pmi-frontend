@@ -31,7 +31,7 @@ export const Img = styled.img`
   height: 50px;
   margin-left: 0.5rem;
   font-size: 1.6rem;
-  padding: 10px 20px;
+  padding-left: 50px ;
 `
 
 export const Base = styled.div`
