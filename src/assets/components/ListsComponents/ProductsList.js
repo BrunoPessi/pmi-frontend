@@ -15,6 +15,12 @@ const ListProduct = styled.ul`
 
 `
 
+const Container = styled.div`
+    width: 1400px; 
+    background: var(--color-gray-light);
+    margin: auto; 
+`
+
 
 function ProductList(props) {
 
@@ -22,7 +28,7 @@ function ProductList(props) {
     const [products, setProducts] = useState([])
 
     async function loadProducts() {
-        const response = await api.get('categories/' + props.category,)
+        const response = await api.get('products')
 
         var list = response.data;
         console.log('92', list);
@@ -34,12 +40,15 @@ function ProductList(props) {
     }, []);
 
     return (
+        <Container>
+           
         <ListProduct>
             {products.map(product => (
                 <Product key={product.id} name={product.name} imgUrl={product.imgUrl} />
 
             ))}
         </ListProduct>
+        </Container>
     );
 }
 
