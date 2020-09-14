@@ -8,7 +8,9 @@ import Product from '../ProductComponent/index.js'
 
 
 const Title = styled.p`
-  font-size: 18rem;
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.22;
   color: --color-footer-gray;
   margin-bottom: 15px;
   border-bottom: 2px solid var(--color-footer-gray);
@@ -20,6 +22,7 @@ const Base = styled.div`
   background: var(--color-gray-light);
   margin: auto;
   margin-bottom: 15px;
+  padding-bottom: 30px;
 `
 
 const responsive = {
@@ -57,7 +60,7 @@ function ProductHome(props) {
 
   return (
       <Base>
-            <Title>Categoria 2</Title>
+            <Title>{props.titulo}</Title>
             <Carousel responsive={responsive}>
             {products.map(product => (
                 <Product

@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
 export const NameProduct = styled.p`
+    font-family: 'Quicksand', sans-serif;
     font-size: 15rem;
     color: var(--color-black-dark);
 `
 
 export const Image = styled.img`
     height: 180px;
+    max-width: 300px;
+
 `
 
 export const ImgBox = styled.div`

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 //components
 import Menu from '../assets/components/MenuComponent/index.js'
-import Slider from '../assets/components/BannerComponent/index.js'
+import Banner from '../assets/components/BannerComponent/index.js'
 import ProductHome from '../assets/components/ListsComponents/ProductCarrosel.js'
 import ProductList from '../assets/components/ListsComponents/ProductsList.js'
 
@@ -22,15 +22,12 @@ function App() {
         <Menu />
       </Container>
       <Container>
-        <Slider />
+        <Banner imagem="https://i.imgur.com/PbHMCEy.png" />
       </Container>
       <Container>
-      <ProductHome category="1"/>
-      <ProductHome category="2"/>
-      <ProductHome category="3"/>
-      <Container>
-      <ProductList/>
-      </Container>
+      <ProductHome titulo="Supreme" category="2"/>
+      <Banner imagem="https://cms-cdn.goat.com/1600/8d3ffb578618-565a-ae11-083f-038380f7.jpg" texto="Air Jordan 5 Retro SE 'Oregon'"/>
+      <ProductHome titulo="Tenis" category="4"/>
       </Container>
     </>
   );
